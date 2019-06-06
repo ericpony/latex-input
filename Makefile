@@ -7,7 +7,7 @@ SHELL := bash
 
 latex_data_dir := data/latex
 latex_data_files := $(wildcard $(latex_data_dir)/*)
-latex_targets := latex.el latex.cin latex.txt latex.ahk latex.stats.txt latex.inputplugin
+latex_targets := latex.el latex.cin latex.txt latex.ahk latex.stats.txt latex.inputplugin latex.exe
 
 latex.el: $(latex_data_files)
 	./generate.rb --name LaTeX --emacs-lisp-file=$@ $^
@@ -25,6 +25,9 @@ latex.txt: $(latex_data_files)
 
 latex.ahk: $(latex_data_files)
 	./generate.rb --name LaTeX --autohotkey-file=$@ $^
+
+latex.exe: $(latex_data_files)
+	[[ -f latex.ahk ]] && ./ahk-to-exe/Ahk2Exe.exe //in latex.ahk //out latex.exe
 
 latex.stats.txt: $(latex_data_files)
 	./generate.rb --stats-file=$@ $^
@@ -70,7 +73,7 @@ apl/latex_apl.ahk: $(latex_apl_data_files)
 apl/latex_apl.stats.txt: $(latex_apl_data_files)
 	./generate.rb --stats-file=$@ $^
 
-targets := $(latex_targets) $(apl_targets) $(latex_apl_targets)
+targets := $(latex_targets) #$(apl_targets) $(latex_apl_targets)
 
 .PHONY: all
 all: $(targets)
