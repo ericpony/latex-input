@@ -739,6 +739,7 @@ Z	Z	1
 \fallingdotseq	≒	1
 \flat	♭	1
 \forall	∀	1
+\from	←	1
 \frown	⌢	1
 \gamma	γ	1
 \ge	≥	1
@@ -798,6 +799,7 @@ Z	Z	1
 \hookleftarrow	↩	1
 \hookrightarrow	↪	1
 \hslash	ℏ	1
+\iff	⇔	1
 \iiiint	⨌	1
 \iiint	∭	1
 \iint	∬	1
@@ -1254,6 +1256,7 @@ Z	Z	1
 \tilde{u}	ũ	1
 \tilde{y}	ỹ	1
 \times	×	1
+\to	→	1
 \top	⊤	1
 \trademark	™	1
 \triangle	△	1

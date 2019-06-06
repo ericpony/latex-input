@@ -2119,6 +2119,9 @@ return
 :c:\forall::
 Send {U+2200}
 return
+:c:\from::
+Send {U+2190}
+return
 :c:\frown::
 Send {U+2322}
 return
@@ -2295,6 +2298,9 @@ Send {U+21AA}
 return
 :c:\hslash::
 Send {U+210F}
+return
+:c:\iff::
+Send {U+21D4}
 return
 :c:\iiiint::
 Send {U+2A0C}
@@ -3663,6 +3669,9 @@ Send {U+1EF9}
 return
 :c:\times::
 Send {U+00D7}
+return
+:c:\to::
+Send {U+2192}
 return
 :c:\top::
 Send {U+22A4}

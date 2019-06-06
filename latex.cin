@@ -711,6 +711,7 @@ Z Z
 \fallingdotseq ≒
 \flat ♭
 \forall ∀
+\from ←
 \frown ⌢
 \gamma γ
 \ge ≥
@@ -770,6 +771,7 @@ Z Z
 \hookleftarrow ↩
 \hookrightarrow ↪
 \hslash ℏ
+\iff ⇔
 \iiiint ⨌
 \iiint ∭
 \iint ∬
@@ -1226,6 +1228,7 @@ Z Z
 \tilde{u} ũ
 \tilde{y} ỹ
 \times ×
+\to →
 \top ⊤
 \trademark ™
 \triangle △
@@ -2192,6 +2195,7 @@ Z Z
 \fallingdotseq ≒
 \flat ♭
 \forall ∀
+\from ←
 \frown ⌢
 \gamma γ
 \ge ≥
@@ -2251,6 +2255,7 @@ Z Z
 \hookleftarrow ↩
 \hookrightarrow ↪
 \hslash ℏ
+\iff ⇔
 \iiiint ⨌
 \iiint ∭
 \iint ∬
@@ -2707,6 +2712,7 @@ Z Z
 \tilde{u} ũ
 \tilde{y} ỹ
 \times ×
+\to →
 \top ⊤
 \trademark ™
 \triangle △
