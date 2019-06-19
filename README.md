@@ -1,17 +1,29 @@
-**latex notation:** [about latex](#about-latex) | [relations and operators](#latex-relation-op) | [sets and logic](#latex-sets-logic) | [geometry](#latex-geometry) | [analysis](#latex-analysis) | [algebra](#latex-algebra) | [superscripts and subscripts](#latex-superscripts-subscripts) | [arrows](#latex-arrows) | [dots](#latex-dots) | [blackboard bold, fraktur, and calligraphic](#latex-blackboard-fraktur-calligraphic) | [english punctuation](#latex-english-punct) | [latin accent](#latex-latin-accent) | [greek](#latex-greek) | [ipa: plosives](#latex-ipa-plosives) | [ipa: nasals](#latex-ipa-nasals) | [ipa: fricatives & approximants](#latex-ipa-fricatives-approximants) | [ipa: vowels](#latex-ipa-vowels) | [astronomy](#latex-astronomy) | [games](#games) | [keyboard symbols](#latex-keyboard)
-
-**install and use:** [mac os x](#mac-install) | [microsoft windows](#windows-install) | [emacs](#emacs-install) | [x windows](#x-install)
-
-**apl notation:** [apl input methods](#apl)
-
-----
-
 Difficulty typing mathematical symbols?
 
 Install a keyboard input method for mathematics and use LaTeX notation to enter 1054 Unicode characters.
 
 Input methods for [Mac OS X](#mac-install), [Microsoft Windows](#windows-install),
 [Emacs](#emacs-install), and [X Windows](#x-install).
+
+Table of Contents
+=================
+
+- [Introduction](#introduction)
+- [About LaTeX](#about-latex)
+- [Mac OS X](#mac-os-x)
+  * [installation](#installation)
+  * [how to use](#how-to-use)
+- [Microsoft Windows](#microsoft-windows)
+  * [installation](#installation-1)
+  * [how to use](#how-to-use-1)
+- [Emacs](#emacs)
+  * [installation](#installation-2)
+  * [how to use](#how-to-use-2)
+- [X Windows](#x-windows)
+  * [installation](#installation-3)
+  * [how to use](#how-to-use-3)
+- [APL Input Methods](#apl-input-methods)
+- [Unicode Sanitizer](#sanitizer-script)
 
 Introduction
 ============
@@ -56,6 +68,8 @@ The input methods also use notation from the following four packages:
     \usepackage{amssymb}
     \usepackage{wasysym}
     \usepackage{tipa}
+
+**Supported LaTex notations:** [relations and operators](#latex-relation-op) | [sets and logic](#latex-sets-logic) | [geometry](#latex-geometry) | [analysis](#latex-analysis) | [algebra](#latex-algebra) | [superscripts and subscripts](#latex-superscripts-subscripts) | [arrows](#latex-arrows) | [dots](#latex-dots) | [blackboard bold, fraktur, and calligraphic](#latex-blackboard-fraktur-calligraphic) | [english punctuation](#latex-english-punct) | [latin accent](#latex-latin-accent) | [greek](#latex-greek) | [ipa: plosives](#latex-ipa-plosives) | [ipa: nasals](#latex-ipa-nasals) | [ipa: fricatives & approximants](#latex-ipa-fricatives-approximants) | [ipa: vowels](#latex-ipa-vowels) | [astronomy](#latex-astronomy) | [games](#games) | [keyboard symbols](#latex-keyboard)
 
 <a name="latex-relation-op"/>
 
@@ -525,7 +539,7 @@ Mac OS X
 installation
 ------------
 
-    $ curl https://raw.githubusercontent.com/clarkgrubb/latex-input/master/latex.cin \
+    $ curl https://raw.githubusercontent.com/ericpony/latex-input/master/latex.cin \
         > ~/Library/Input\ Methods/latex.cin
 
 <a name="mac-howto"/>
@@ -566,9 +580,9 @@ Microsoft Windows
 installation
 ------------
 
-Download [latex.exe](https://raw.githubusercontent.com/clarkgrubb/latex-input/master/latex.exe) and install it in your Startup folder.  Open the Startup folder in File Explorer by pressing `Cmd+R` and entering `shell:startup`.  The input method will run the next time you log in.  You can also start it by double-clicking it in File Explorer.
+Download [latex.exe](https://raw.githubusercontent.com/ericpony/latex-input/master/latex.exe) and install it in your Startup folder.  Open the Startup folder in File Explorer by pressing `Cmd+R` and entering `shell:startup`.  The input method will run the next time you log in.  You can also start it by double-clicking it in File Explorer.
 
-If you have [AutoHotkey](http://www.autohotkey.com/) installed, you can download and install [latex.ahk](https://raw.githubusercontent.com/clarkgrubb/latex-input/master/latex.ahk) instead.
+If you have [AutoHotkey](http://www.autohotkey.com/) installed, you can download and install [latex.ahk](https://raw.githubusercontent.com/ericpony/latex-input/master/latex.ahk) instead.
 
 <a name="windows-howto"/>
 
@@ -591,7 +605,7 @@ installation
 
 Download the Emacs Lisp file to a place in your Emacs library path:
 
-    $ wget https://raw.githubusercontent.com/clarkgrubb/latex-input/master/latex.el
+    $ wget https://raw.githubusercontent.com/ericpony/latex-input/master/latex.el
 
 You can load `latex.el` manually at any time with the command
 
@@ -700,4 +714,20 @@ The programming language APL uses 85 non-ASCII Unicode characters.  This reposit
 
 Since LaTeX input notation usually starts with a backslash and never with an ampersand, it is disjoint from the APL input notation.  Hence we are able to provide a single input method for both.
 
+Unicode Sanitizer
+=================
 
+This repository contains a NodeJS script `sanitise.js` to convert the mathematical symbols typed via this input method to their corresponding LaTex commands.
+
+Synopsis:
+```
+  $ node sanitise.js [--src file] [--dest file] [--dict file]
+  $ node sanitise.js --help
+```
+Options:
+```
+  -i, --src file    The file to be sanitised; omit to read from stdin.
+  -o, --dest file   The file to be saved; omit to write to stdout.
+  -d, --dict file   The unicode-to-latex map file. (Default: table.dat)
+  -h, --help        Display this usage guide.
+```
