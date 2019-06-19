@@ -35,9 +35,7 @@ END_DEFINITION
 BEGIN_TABLE
 !	!	1
 !'	¡	1
-'	′	1
-''	″	1
-'''	‴	1
+'	”	1
 --	–	1
 ---	—	1
 0	0	1
@@ -598,6 +596,7 @@ Z	Z	1
 \dag	†	1
 \dagger	†	1
 \daleth	ℸ	1
+\dash	—	1
 \dashleftarrow	⇠	1
 \dashrightarrow	⇢	1
 \dashv	⊣	1
@@ -849,6 +848,7 @@ Z	Z	1
 \looparrowleft	↫	1
 \looparrowright	↬	1
 \lozenge	◊	1
+\lq	‘	1
 \ltimes	⋉	1
 \mapsto	↦	1
 \mars	♂	1
@@ -1018,8 +1018,6 @@ Z	Z	1
 \mathfrak{x}	𝔵	1
 \mathfrak{y}	𝔶	1
 \mathfrak{z}	𝔷	1
-\mbox{''}	”	1
-\mbox{'}	’	1
 \measuredangle	∡	1
 \mercury	☿	1
 \mho	℧	1
@@ -1112,6 +1110,7 @@ Z	Z	1
 \rightsquigarrow	⇝	1
 \rightthreetimes	⋌	1
 \risingdotseq	≓	1
+\rq	’	1
 \rtimes	⋊	1
 \sagittarius	♐	1
 \saturn	♄	1
@@ -1472,8 +1471,7 @@ _t	ₜ	1
 _u	ᵤ	1
 _v	ᵥ	1
 _x	ₓ	1
-`	‘	1
-``	“	1
+`	“	1
 a	a	1
 b	b	1
 c	c	1

@@ -8,13 +8,7 @@ return
 Send {U+00A1}
 return
 :c:'::
-Send {U+2032}
-return
-:c:''::
-Send {U+2033}
-return
-:c:'''::
-Send {U+2034}
+Send {U+201D}
 return
 :c:--::
 Send {U+2013}
@@ -1696,6 +1690,9 @@ return
 :c:\daleth::
 Send {U+2138}
 return
+:c:\dash::
+Send {U+2014}
+return
 :c:\dashleftarrow::
 Send {U+21E0}
 return
@@ -2449,6 +2446,9 @@ return
 :c:\lozenge::
 Send {U+25CA}
 return
+:c:\lq::
+Send {U+2018}
+return
 :c:\ltimes::
 Send {U+22C9}
 return
@@ -2956,12 +2956,6 @@ return
 :c:\mathfrak{z}::
 Send {U+1D537}
 return
-:c:\mbox{''}::
-Send {U+201D}
-return
-:c:\mbox{'}::
-Send {U+2019}
-return
 :c:\measuredangle::
 Send {U+2221}
 return
@@ -3237,6 +3231,9 @@ Send {U+22CC}
 return
 :c:\risingdotseq::
 Send {U+2253}
+return
+:c:\rq::
+Send {U+2019}
 return
 :c:\rtimes::
 Send {U+22CA}
@@ -4319,9 +4316,6 @@ return
 Send {U+2093}
 return
 :c:``::
-Send {U+2018}
-return
-:c:````::
 Send {U+201C}
 return
 :c:a::

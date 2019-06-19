@@ -7,9 +7,7 @@
 %keyname begin
 ! !
 !' ¡
-' ′
-'' ″
-''' ‴
+' ”
 -- –
 --- —
 0 0
@@ -570,6 +568,7 @@ Z Z
 \dag †
 \dagger †
 \daleth ℸ
+\dash —
 \dashleftarrow ⇠
 \dashrightarrow ⇢
 \dashv ⊣
@@ -821,6 +820,7 @@ Z Z
 \looparrowleft ↫
 \looparrowright ↬
 \lozenge ◊
+\lq ‘
 \ltimes ⋉
 \mapsto ↦
 \mars ♂
@@ -990,8 +990,6 @@ Z Z
 \mathfrak{x} 𝔵
 \mathfrak{y} 𝔶
 \mathfrak{z} 𝔷
-\mbox{''} ”
-\mbox{'} ’
 \measuredangle ∡
 \mercury ☿
 \mho ℧
@@ -1084,6 +1082,7 @@ Z Z
 \rightsquigarrow ⇝
 \rightthreetimes ⋌
 \risingdotseq ≓
+\rq ’
 \rtimes ⋊
 \sagittarius ♐
 \saturn ♄
@@ -1444,8 +1443,7 @@ _t ₜ
 _u ᵤ
 _v ᵥ
 _x ₓ
-` ‘
-`` “
+` “
 a a
 b b
 c c
@@ -1491,9 +1489,7 @@ z z
 %chardef begin
 ! !
 !' ¡
-' ′
-'' ″
-''' ‴
+' ”
 -- –
 --- —
 0 0
@@ -2054,6 +2050,7 @@ Z Z
 \dag †
 \dagger †
 \daleth ℸ
+\dash —
 \dashleftarrow ⇠
 \dashrightarrow ⇢
 \dashv ⊣
@@ -2305,6 +2302,7 @@ Z Z
 \looparrowleft ↫
 \looparrowright ↬
 \lozenge ◊
+\lq ‘
 \ltimes ⋉
 \mapsto ↦
 \mars ♂
@@ -2474,8 +2472,6 @@ Z Z
 \mathfrak{x} 𝔵
 \mathfrak{y} 𝔶
 \mathfrak{z} 𝔷
-\mbox{''} ”
-\mbox{'} ’
 \measuredangle ∡
 \mercury ☿
 \mho ℧
@@ -2568,6 +2564,7 @@ Z Z
 \rightsquigarrow ⇝
 \rightthreetimes ⋌
 \risingdotseq ≓
+\rq ’
 \rtimes ⋊
 \sagittarius ♐
 \saturn ♄
@@ -2928,8 +2925,7 @@ _t ₜ
 _u ᵤ
 _v ᵥ
 _x ₓ
-` ‘
-`` “
+` “
 a a
 b b
 c c
