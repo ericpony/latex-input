@@ -15,8 +15,8 @@ const options = argsParser(optionSpec);
 if(options.help) {
   const sections = [
     {
-      header: 'Unicode Sanitiser',
-      content: 'Convert mathematical symbols in unicode to the corresponding latex literals.'
+      header: 'LaTex Unicode Sanitiser',
+      content: 'Convert mathematical symbols in unicode to their corresponding LaTex literals.'
     },
     {
       header: 'Synopsis',
