@@ -23,7 +23,7 @@ Table of Contents
   * [installation](#installation-3)
   * [how to use](#how-to-use-3)
 - [APL Input Methods](#apl-input-methods)
-- [Unicode Sanitizer](#sanitizer-script)
+- [Unicode Sanitizer](#unicode-sanitizer)
 
 Introduction
 ============
@@ -717,7 +717,7 @@ Since LaTeX input notation usually starts with a backslash and never with an amp
 Unicode Sanitizer
 =================
 
-This repository contains a NodeJS script `sanitise.js` to convert the mathematical symbols typed via this input method to their corresponding LaTex commands.
+This repository contains a NodeJS utility script `sanitise.js` to convert frequent mathematical symbols in unicode to their LaTex notation.
 
 Synopsis:
 ```

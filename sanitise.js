@@ -16,7 +16,7 @@ if(options.help) {
   const sections = [
     {
       header: 'LaTex Unicode Sanitiser',
-      content: 'Convert mathematical symbols in unicode to their corresponding LaTex literals.'
+      content: 'Convert mathematical symbols in unicode to their corresponding LaTex notation.'
     },
     {
       header: 'Synopsis',
