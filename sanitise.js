@@ -8,7 +8,7 @@ const optionSpec = [
   { name: 'dest', alias: 'o', type: String, typeLabel: '{underline file}',
     description: 'The file to be saved; omit to write to stdout.' },
   { name: 'dict', alias: 'd', type: String, typeLabel: '{underline file}',
-    defaultValue: __dirname + "/table.dat", description: 'The unicode-to-latex map file. (Default: table.dat)' },
+    defaultValue: __dirname + "/table.dat", description: 'The unicode-to-LaTex dictionary. (Default: table.dat)' },
   { name: 'help', alias: 'h', type: Boolean, description: 'Display this usage guide.' }
 ];
 const options = argsParser(optionSpec);
@@ -76,10 +76,9 @@ readInterface.on("close", () => {
     let seen = false;
     let lineNo = 1;
     while (null !== (chunk = readable.read(1) /* here */)) {
-      //chunk = chunk.toString('utf8');
-      if(chunk=="\n")
+      if(chunk=="\n") {
         lineNo++;
-      //console.log('chunk: ' + typeof chunk);
+      }
       if(chunk.charCodeAt(0)>threshold) {
         let symbol = dict[chunk];
         if(!symbol) {
@@ -93,8 +92,8 @@ readInterface.on("close", () => {
           if(![" ", "\\", "$", ".", ",", "\n"].some(c => c==chunk)) {
             chunk = " " + chunk;
           }
+          seen = false;
         }
-        seen = false;
       }
       writable.write(chunk);
     }

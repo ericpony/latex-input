@@ -547,10 +547,7 @@ installation
 how to use
 ----------
 
-In
-
-    System Preferences | Keyboard | Input Sources
-
+In `System Preferences | Keyboard | Input Sources`, 
 you should see a new input source called `LaTeX`.  An input source
 is what Mac OS X calls an input method.  If you check the box next
 to `LaTeX` and if you make sure that `Show Input menu in menu bar` is
@@ -569,8 +566,7 @@ insist that you disambiguate.  It does this with a pop-up window.  Use the arrow
 keys to select the correct symbol and press `RETURN`.
 
 To set a Mac OS X keyboard shortcut for switching input source, go to:
-
-    System Preferences | Keyboard | Shortcuts | Input Sources
+`System Preferences | Keyboard | Shortcuts | Input Sources`.
 
 <a name="windows-install"/>
 
@@ -728,6 +724,6 @@ Options:
 ```
   -i, --src file    The file to be sanitised; omit to read from stdin.
   -o, --dest file   The file to be saved; omit to write to stdout.
-  -d, --dict file   The unicode-to-latex map file. (Default: table.dat)
+  -d, --dict file   The unicode-to-LaTex dictionary. (Default: table.dat)
   -h, --help        Display this usage guide.
 ```
